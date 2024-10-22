@@ -1,14 +1,13 @@
 import './App.css'
-import Card from './components/Card'
+import Header from './components/Header'
+import PeopleContainer from './components/PeopleContainer'
 
 function App() {
-  
-
   return (
-    <>
-    <h1 className='font-bold'>SUper</h1>
-      <Card/>
-    </>
+    <div className="p-10 bg-green-600 ">
+      <Header Title='HTL Dornbirn 5bWI'></Header>
+      <PeopleContainer />
+    </div>
   )
 }
 
