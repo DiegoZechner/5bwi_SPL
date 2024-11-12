@@ -4,7 +4,7 @@ import PeopleContainer from './components/PeopleContainer'
 
 function App() {
   return (
-    <div className="p-10 bg-green-600 ">
+    <div className="p-10 bg-green-900 ">
       <Header Title='HTL Dornbirn 5bWI'></Header>
       <PeopleContainer />
     </div>
