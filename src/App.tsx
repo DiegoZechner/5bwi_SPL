@@ -1,4 +1,4 @@
-import './App.css'
+
 import Header from './components/Header'
 import PeopleContainer from './components/PeopleContainer'
 

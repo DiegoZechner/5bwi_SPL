@@ -7,13 +7,13 @@ type Props = {
 
 export default function Card({name, description, imageUrl, age}: Props) {
   return (
-    <div className="bg-white border rounded-lg ">
+    <div className="bg-white border rounded-lg font-jaro font-optical text-lg">
       <div className="h-50">
-        <img src={imageUrl} alt={name} className="w-full h-full object-cover border rounded-lg"/>
+        <img src={imageUrl} alt={name} className="w-full h-full object-cover border"/>
       </div>
-      <div className="p-4">
-        <h2 className="text-xl font-bold mb-2">{name}</h2>
-        <p>{description}</p>
+      <div className="p-4 ">
+        <h2 className="mb-2 font-jaro font-optical ">{name}</h2>
+        <p className="font-normal text-base">{description}</p>
         <p>{age}</p>
       </div>
     </div>

@@ -8,7 +8,8 @@ export default function PeopleContainer({}: Props) {
       <Card name="Maxim Zechner" description="Test Feld ohne Text Test Feld ohne Text" imageUrl="https://picsum.photos/id/2/200/300" />
       <Card name="Tamir Zechner" description="Test Feld ohne Text Test Feld ohne Text" imageUrl="https://picsum.photos/id/3/200/300" />
       <Card name="Nigg Zechner" description="Test Feld ohne Text Test Feld ohne Text" imageUrl="https://picsum.photos/id/4/200/300" />
-      
+      <Card name="Ronny Zechner" description="Test Feld ohne Text Test Feld ohne Text" imageUrl="https://picsum.photos/id/4/200/300" />
+      <Card name="Moo Zechner" description="Test Feld ohne Text Test Feld ohne Text" imageUrl="https://picsum.photos/id/4/200/300" />
     </div>
   )
 }
