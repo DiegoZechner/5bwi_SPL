@@ -15,7 +15,7 @@ export default function Card({name, description, imageUrl, age}: Props) {
         <h2 className="mb-2 font-jaro font-optical ">{name}</h2>
         <p className="font-normal text-base">{description}</p>
         <p>{age}</p>
-      </div>
+      </div>  
     </div>
   )
 }
