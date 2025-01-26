@@ -1,8 +1,24 @@
-// SupabasePage.tsx
+import { useState, useEffect } from 'react';
+import supabase from './supabaseClient';
+import { data } from 'react-router-dom';
+
 export default function SupabasePage() {
-  return (
-    <div className="p-10">
-      <h1 className="text-4xl">Hello World - Supabase Page</h1>
-    </div>
-  );
+  const [homework, setHomework] = useState([]);
+  const [subject, setSubject] = useState('');
+  const [note, setNote] = useState('');
+
+  useEffect(() => {
+    async function fetchHomework() {
+      const { data } = await supabase
+        .from('homework')
+        .select('*')
+        .order('id', { ascending: true });
+    }
+
+
+    fetchHomework();
+  }, []);
+
+
+
 }
