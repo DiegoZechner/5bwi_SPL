@@ -20,4 +20,33 @@ export default function SupabasePage() {
   const handleAddHomework = async () => {
     const {} = await supabase.from("homework").insert([{ subject, note }]);
   };
+
+  return (
+    <div className="p-10">
+      <h1 className="text-4xl">Hausaufgaben</h1>
+
+      <div className="my-6">
+        <input
+          type="text"
+          placeholder="Fach"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+          className="border p-2 mr-2"
+        />
+        <input
+          type="text"
+          placeholder="Notiz"
+          value={note}
+          onChange={(e) => setNote(e.target.value)}
+          className="border p-2 mr-2"
+        />
+        <button
+          onClick={handleAddHomework}
+          className="bg-green-500 text-white px-4 py-2 rounded"
+        >
+          Hinzufügen
+        </button>
+      </div>
+    </div>
+  );
 }
