@@ -12,7 +12,9 @@ export default function PeopleContainer() {
  
 
   useEffect(() => {
-    fetch("http://10.115.1.48:8055/items/people")
+    fetch("http://localhost:3306/items/people") 
+    // http://10.115.1.48:8055/items/people
+    // imageUrl={`http://10.115.1.48:8055/assets/${person.image}`}
       .then((response) => {
         return response.json();
       })
@@ -28,7 +30,7 @@ export default function PeopleContainer() {
           key={index}
           name={person.name}
           description={person.description}
-          imageUrl={`http://10.115.1.48:8055/assets/${person.image}`}
+          imageUrl={`http://localhost:3306/assets/${person.image}`}
         />
       ))}
     </div>
